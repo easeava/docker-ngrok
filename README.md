@@ -1,9 +1,6 @@
-```
-docker pull easeava/ngrok
-```
-
 > 编译
 ```
+docker build -t easeava/ngrok .
 docker run -it --rm --name ngrok-server -v /path:/ngrok -e HOST_ADDR="ngrok.smhx.net" easeava/ngrok /bin/sh /build.sh
 ```
 
