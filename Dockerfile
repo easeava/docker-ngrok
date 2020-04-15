@@ -3,9 +3,9 @@ LABEL ease <easeava@gmail.com>
 
 RUN apk add --no-cache git make
 
-# RUN cd /usr/local && git clone https://github.com/inconshreveable/ngrok.git ./ngrok
+RUN cd /usr/local && git clone https://github.com/inconshreveable/ngrok.git ngrok
 
-ADD ngrok /usr/local/ngrok
+# ADD ngrok /usr/local/ngrok
 ADD *.sh /
 
 ENV HOST_ADDR null
