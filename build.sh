@@ -8,7 +8,7 @@ fi
 
 cd ${NGROK_PATH}
 
-cp -r ngrokroot.crt /usr/local/ngrok/assets/client/tls/ngrokroot.crt
+cp -r ngrokroot.crt /usr/local/ngrok/assets/client/tls/
 
 cd /usr/local/ngrok
 make release-server
